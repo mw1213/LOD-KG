@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/countries.owl"
+         xmlns="http://test.org/countries.owl#">
+
+<owl:Ontology rdf:about="http://test.org/countries.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_neighbour">
+  <rdfs:domain rdf:resource="#Country"/>
+  <rdfs:range rdf:resource="#Country"/>
+  <owl:inverseOf rdf:resource="#is_neighbour_of"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#is_neighbour_of">
+  <rdfs:domain rdf:resource="#Country"/>
+  <rdfs:range rdf:resource="#Country"/>
+  <owl:inverseOf rdf:resource="#has_neighbour"/>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#name">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Country"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#population">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Country"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#area">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  <rdfs:domain rdf:resource="#Country"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Country">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<Country rdf:about="#Poland">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has_neighbour rdf:resource="#Czech Republic"/>
+  <is_neighbour_of rdf:resource="#Czech Republic"/>
+  <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38268000</population>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">312696</area>
+</Country>
+
+<Country rdf:about="#Germany">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has_neighbour rdf:resource="#Poland"/>
+  <has_neighbour rdf:resource="#Czech Republic"/>
+  <is_neighbour_of rdf:resource="#Poland"/>
+  <is_neighbour_of rdf:resource="#Czech Republic"/>
+  <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83019200</population>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">357578</area>
+</Country>
+
+<Country rdf:about="#Czech Republic">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10649800</population>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78866</area>
+</Country>
+
+
+</rdf:RDF>

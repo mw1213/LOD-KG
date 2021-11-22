@@ -44,8 +44,8 @@
 
 <Country rdf:about="#Poland">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <has_neighbour rdf:resource="#Czech Republic"/>
-  <is_neighbour_of rdf:resource="#Czech Republic"/>
+  <has_neighbour rdf:resource="#Russia"/>
+  <is_neighbour_of rdf:resource="#Russia"/>
   <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38268000</population>
   <area rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">312696</area>
 </Country>
@@ -54,16 +54,68 @@
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <has_neighbour rdf:resource="#Poland"/>
   <has_neighbour rdf:resource="#Czech Republic"/>
+  <has_neighbour rdf:resource="#Lithuania"/>
   <is_neighbour_of rdf:resource="#Poland"/>
   <is_neighbour_of rdf:resource="#Czech Republic"/>
+  <is_neighbour_of rdf:resource="#Lithuania"/>
   <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">83019200</population>
   <area rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">357578</area>
 </Country>
 
 <Country rdf:about="#Czech Republic">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has_neighbour rdf:resource="#Poland"/>
+  <has_neighbour rdf:resource="#Slovakia"/>
+  <is_neighbour_of rdf:resource="#Poland"/>
+  <is_neighbour_of rdf:resource="#Slovakia"/>
   <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10649800</population>
   <area rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">78866</area>
+</Country>
+
+<Country rdf:about="#Slovakia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has_neighbour rdf:resource="#Ukraine"/>
+  <has_neighbour rdf:resource="#Poland"/>
+  <is_neighbour_of rdf:resource="#Ukraine"/>
+  <is_neighbour_of rdf:resource="#Poland"/>
+  <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5459000</population>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">49034</area>
+</Country>
+
+<Country rdf:about="#Ukraine">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has_neighbour rdf:resource="#Poland"/>
+  <has_neighbour rdf:resource="#Belarus"/>
+  <is_neighbour_of rdf:resource="#Poland"/>
+  <is_neighbour_of rdf:resource="#Belarus"/>
+  <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44130000</population>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">603700</area>
+</Country>
+
+<Country rdf:about="#Belarus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has_neighbour rdf:resource="#Poland"/>
+  <has_neighbour rdf:resource="#Lithuania"/>
+  <is_neighbour_of rdf:resource="#Poland"/>
+  <is_neighbour_of rdf:resource="#Lithuania"/>
+  <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9399000</population>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">207600</area>
+</Country>
+
+<Country rdf:about="#Lithuania">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has_neighbour rdf:resource="#Poland"/>
+  <has_neighbour rdf:resource="#Russia"/>
+  <is_neighbour_of rdf:resource="#Poland"/>
+  <is_neighbour_of rdf:resource="#Russia"/>
+  <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2795000</population>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65300</area>
+</Country>
+
+<Country rdf:about="#Russia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <population rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">144100000</population>
+  <area rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17125191</area>
 </Country>
 
 
